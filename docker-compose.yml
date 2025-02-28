@@ -1,0 +1,14 @@
+services:
+  sonar-qube:
+    image: sonarqube:community
+    ports:
+      - "9000:9000"
+    volumes:
+      - "sonarqube-data:/opt/sonarqube/data"
+      - "sonarqube-logs:/opt/sonarqube/logs"
+
+volumes:
+  sonarqube-data:
+    driver: local
+  sonarqube-logs:
+    driver: local
