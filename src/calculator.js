@@ -16,7 +16,13 @@ class calculator {
   }
 
   static repeatTextTimes(text, times) {
-    return text.repeat(times);
+    let textAccumulator = '';
+
+    for (let i = 0; i < times; i++) {
+      textAccumulator += text;
+    }
+
+    return textAccumulator;
   }
 
   static sumSubAndSquare(a, b) {
