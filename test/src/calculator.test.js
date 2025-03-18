@@ -37,9 +37,9 @@ test('square 2 to equal 4', () => {
 });
 
 test('repeat text xx times 1 to equal xx', () => {
-    expect(calculator.repeatTextTimes('xx')).toBe('xx');
+    expect(calculator.repeatTextTimes('xx', 1)).toBe('xx');
 });
 
 test('repeat text xxy times 2 to equal xxyxxy', () => {
-    expect(calculator.repeatTextTimes('xxy')).toBe('xxyxxy');
+    expect(calculator.repeatTextTimes('xxy', 2)).toBe('xxyxxy');
 });
